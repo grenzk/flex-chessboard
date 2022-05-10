@@ -30,10 +30,20 @@ body {
   flex: 1;
 }
 
+.squares .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .squares:nth-of-type(odd) .square:nth-of-type(even) {
   background-color: rgb(64, 44, 17);
 }
 
 .squares:nth-of-type(even) .square:nth-of-type(odd) {
   background-color: rgb(64, 44, 17);
+}
+
+.white-piece {
+  color: white;
 }
