@@ -22,7 +22,7 @@ body {
 }
 
 .chessboard-container {
-  border: 5px solid #000000;
+  border: 10px solid #402c11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,9 +44,19 @@ body {
 }
 
 .square {
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
+  /* background-color: hsl(46, 100%, 75%); */
+  background-color: #f7d8a4;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.squares:nth-of-type(odd) .square:nth-of-type(even) {
+  background-color: #402c11;
+}
+
+.squares:nth-of-type(even) .square:nth-of-type(odd) {
+  background-color: #402c11;
 }
 /*# sourceMappingURL=styles.css.map */
