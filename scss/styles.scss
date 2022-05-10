@@ -1,13 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 @import "reset";
 
 html, body {
   height: 100%;
+  font-family: 'Libre Baskerville', serif;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#title {
+  font-size: 54px;
 }
 
 .chessboard-container {
