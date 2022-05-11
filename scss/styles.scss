@@ -12,29 +12,22 @@ body {
   align-items: center;
 }
 
-#main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
 #title {
-  font-size: 54px;
+  display: none;
 }
 
 .chessboard-container {
   border: 10px solid rgb(64, 44, 17);
   display: flex;
   flex-direction: column;
-  width: 40vw;
-  height: 40vw;
+  width: 30vw;
+  height: 30vw;
 }
 
 .squares {
   display: flex;
   flex: 1;
+  width: 100%;
 }
 
 .square {
@@ -45,6 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   flex: 1;
+  width: 100%;
 }
 
 .squares:nth-of-type(odd) .square:nth-of-type(even) {
@@ -58,4 +52,16 @@ body {
 img {
   max-width: 100%;
   max-height: 100%;
+  width: 80%;
+}
+
+@media screen 
+  and (min-device-width: 200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .chessboard-container {
+      width: 600px;
+      height: 600px;
+    }
 }
