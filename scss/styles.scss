@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
-@import "reset", "animation", "loader";
+@import "reset", "variables", "animation", "loader", "moves";
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: Helvetica, sans-serif;
-  background-color: hsl(350, 100%, 93%);
+  background-color: $background-color;
 }
 
 body {
@@ -16,18 +17,11 @@ body {
 #title {
   font-size: 3em;
   margin-bottom: 20px;
-  color: rgb(22, 49, 82);
-}
-
-#loader {
-  font-size: 3em;
-  margin-top: 30px;
-  text-align: center;
-  color: hsl(213, 58%, 15%);
+  color: $title-color;
 }
 
 .chessboard-container {
-  border: 10px solid rgb(22, 49, 82); 
+  border: 10px solid $border-color; 
   display: flex;
   flex-direction: column;
   width: 30vw;
@@ -43,10 +37,7 @@ body {
 }
 
 .square {
-  /* border: 1px solid #000000; */
-  /* background-color: hsl(46, 100%, 75%); */
-  /*background-color: hsl(38, 84%, 70%); */
-  background-color: hsl(46, 100%, 74%);
+  background-color: map-get($square-colors, "yellowish");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,12 +46,11 @@ body {
 }
 
 .squares:nth-of-type(odd) .square:nth-of-type(even) {
-  /*background-color: hsl(34, 58%, 30%); */
-  background-color: hsl(213, 58%, 30%);
+  background-color: map-get($square-colors, "bluish");
 }
 
 .squares:nth-of-type(even) .square:nth-of-type(odd) {
-  background-color: hsl(213, 58%, 30%);
+  background-color: map-get($square-colors, "bluish");
 }
 
 img {
@@ -92,7 +82,7 @@ img {
   }
 
   .chessboard-container {
-    border: 5px solid rgb(22, 49, 82);
+    border: 5px solid $border-color;
   }
 }
 
@@ -102,63 +92,4 @@ img {
     width: 600px;
     height: 600px;
   }
-}
-
-
-/* moves */
-
-#e2 img {
-  animation-name: move-up-2;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
-}
-
-#e7 img {
-  animation-name: move-down-2;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
-}
-
-#f1 img {
-  animation-name: move-diagonal-3;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: 8s;
-}
-
-#b8 img {
-  animation-name: move-L-right;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: 11s;
-}
-
-#d1 img {
-  animation-name: move-diagonal-4, move-diagonal-2;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards, forwards;
-  animation-delay: 13s, 19s;
-}
-
-#g8 img {
-  animation-name: move-L-left;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: 16s;
-}
-
-#f7 img {
-    animation-name: remove-piece;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-delay: 18s;
 }

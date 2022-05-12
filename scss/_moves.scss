@@ -1,0 +1,69 @@
+#e2 {
+	img {
+		animation-name: move-up-2;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+		animation-delay: 2s;
+	}
+}
+
+#e7 {
+	img {
+		animation-name: move-down-2;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+		animation-delay: 5s;
+	}
+}
+
+#f1 {
+	img {
+		animation-name: move-diagonal-3;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+		animation-delay: 8s;
+	}
+}
+
+#b8 {
+	img {
+		animation-name: move-L-right;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+		animation-delay: 11s;
+	}
+}
+
+#d1 {
+	img {
+		animation-name: move-diagonal-4, move-diagonal-2;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards, forwards;
+		animation-delay: 13s, 19s;
+	}
+}
+
+#g8 {
+	img {
+		animation-name: move-L-left; 
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+		animation-delay: 16s;
+	}
+}
+
+#f7 {
+	img {
+		animation-name: remove-piece;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		animation-fill-mode: forwards;
+		animation-delay: 18s;
+	}
+}

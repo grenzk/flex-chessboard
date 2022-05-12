@@ -249,126 +249,6 @@
   }
 }
 
-html, body {
-  height: 100%;
-  font-family: Helvetica, sans-serif;
-  background-color: #ffdbe1;
-}
-
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#title {
-  font-size: 3em;
-  margin-bottom: 20px;
-  color: #163152;
-}
-
-#loader {
-  font-size: 3em;
-  margin-top: 30px;
-  text-align: center;
-  color: #10243c;
-}
-
-.chessboard-container {
-  border: 10px solid #163152;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 30vw;
-  height: 30vw;
-  -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.5);
-          box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.5);
-  border-radius: 1%;
-}
-
-.squares {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-}
-
-.square {
-  /* border: 1px solid #000000; */
-  /* background-color: hsl(46, 100%, 75%); */
-  /*background-color: hsl(38, 84%, 70%); */
-  background-color: #ffe07a;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-}
-
-.squares:nth-of-type(odd) .square:nth-of-type(even) {
-  /*background-color: hsl(34, 58%, 30%); */
-  background-color: #204879;
-}
-
-.squares:nth-of-type(even) .square:nth-of-type(odd) {
-  background-color: #204879;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: 80%;
-}
-
-@media screen and (min-device-width: 200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  .chessboard-container {
-    width: 600px;
-    height: 600px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  #title {
-    font-size: 1em;
-    margin-bottom: 5px;
-  }
-  .loader {
-    margin-top: 20px;
-  }
-  .chessboard-container {
-    border: 5px solid #163152;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .chessboard-container {
-    width: 600px;
-    height: 600px;
-  }
-}
-
-/* moves */
 #e2 img {
   -webkit-animation-name: move-up-2;
           animation-name: move-up-2;
@@ -458,5 +338,114 @@ img {
           animation-fill-mode: forwards;
   -webkit-animation-delay: 18s;
           animation-delay: 18s;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+  background-color: #ffdbe1;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #153051;
+}
+
+.chessboard-container {
+  border: 10px solid #163152;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30vw;
+  height: 30vw;
+  -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.5);
+  border-radius: 1%;
+}
+
+.squares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+.square {
+  background-color: #ffe07a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+.squares:nth-of-type(odd) .square:nth-of-type(even) {
+  background-color: #204879;
+}
+
+.squares:nth-of-type(even) .square:nth-of-type(odd) {
+  background-color: #204879;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+}
+
+@media screen and (min-device-width: 200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .chessboard-container {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #title {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  .loader {
+    margin-top: 20px;
+  }
+  .chessboard-container {
+    border: 5px solid #163152;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .chessboard-container {
+    width: 600px;
+    height: 600px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
