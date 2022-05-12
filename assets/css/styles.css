@@ -353,6 +353,9 @@ img {
     font-size: 1em;
     margin-bottom: 5px;
   }
+  .loader {
+    margin-top: 20px;
+  }
   .chessboard-container {
     border: 5px solid #163152;
   }
