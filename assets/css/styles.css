@@ -196,7 +196,8 @@
 
 html, body {
   height: 100%;
-  font-family: 'Libre Baskerville', serif;
+  font-family: Helvetica, sans-serif;
+  background-color: #ffdbe1;
 }
 
 body {
@@ -212,11 +213,20 @@ body {
 }
 
 #title {
-  display: none;
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #10243c;
+}
+
+#loader {
+  font-size: 3em;
+  margin-top: 30px;
+  text-align: center;
+  color: #10243c;
 }
 
 .chessboard-container {
-  border: 10px solid #402c11;
+  border: 10px solid #163152;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,6 +236,9 @@ body {
           flex-direction: column;
   width: 30vw;
   height: 30vw;
+  -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.5);
+  border-radius: 1%;
 }
 
 .squares {
@@ -241,7 +254,8 @@ body {
 .square {
   /* border: 1px solid #000000; */
   /* background-color: hsl(46, 100%, 75%); */
-  background-color: #f3c472;
+  /*background-color: hsl(38, 84%, 70%); */
+  background-color: #ffe07a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,11 +272,12 @@ body {
 }
 
 .squares:nth-of-type(odd) .square:nth-of-type(even) {
-  background-color: #795220;
+  /*background-color: hsl(34, 58%, 30%); */
+  background-color: #204879;
 }
 
 .squares:nth-of-type(even) .square:nth-of-type(odd) {
-  background-color: #795220;
+  background-color: #204879;
 }
 
 img {
@@ -272,6 +287,23 @@ img {
 }
 
 @media screen and (min-device-width: 200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .chessboard-container {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #title {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  .chessboard-container {
+    border: 5px solid #163152;
+  }
+}
+
+@media only screen and (min-width: 900px) {
   .chessboard-container {
     width: 600px;
     height: 600px;
