@@ -14,18 +14,18 @@ body {
 }
 
 #title {
-  font-size: 3em;
-  margin-bottom: 20px;
+  font-size: 5vmin;
+  margin-bottom: 1vmin;
   color: $title-color;
 }
 
 .chessboard-container {
-  border: 10px solid $border-color; 
+  border: 1.2vmin solid $border-color; 
   display: flex;
   flex-direction: column;
   width: 30vw;
   height: 30vw;
-  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0.2vmin 0.5vmin 2vmin rgba(0, 0, 0, 0.5);
   border-radius: 1%;
 }
 
@@ -58,7 +58,7 @@ img {
   width: 80%;
 }
 
-@media screen 
+/*@media screen 
   and (min-device-width: 200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
@@ -92,3 +92,4 @@ img {
     height: 600px;
   }
 }
+ */
