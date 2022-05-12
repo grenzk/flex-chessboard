@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
-@import "reset", "animation";
+@import "reset", "animation", "loader";
 
 html, body {
   height: 100%;
@@ -16,7 +16,7 @@ body {
 #title {
   font-size: 3em;
   margin-bottom: 20px;
-  color: hsl(213, 58%, 15%);
+  color: rgb(22, 49, 82);
 }
 
 #loader {
