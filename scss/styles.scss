@@ -14,18 +14,18 @@ body {
 }
 
 #title {
-  font-size: 5vmin;
+  font-size: 4.9vmin;
   margin-bottom: 2vmin;
   color: $title-color;
 }
 
 .chessboard-container {
-  border: 1.2vmin solid $border-color; 
+  border: 1.1vmin solid $border-color; 
   display: flex;
   flex-direction: column;
-  width: 30vw;
-  height: 30vw;
-  box-shadow: 0.2vmin 0.5vmin 2vmin rgba(0, 0, 0, 0.5);
+  width: 31.2vw;
+  height: 31.2vw;
+  box-shadow: 0.2vmin 0.3vmin 1.5vmin rgba(0, 0, 0, 0.5);
   border-radius: 1%;
 }
 
