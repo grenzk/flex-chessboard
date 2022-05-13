@@ -373,8 +373,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 31.2vw;
-  height: 31.2vw;
+  width: 61.2vmin;
+  height: 61.2vmin;
   -webkit-box-shadow: 0.2vmin 0.3vmin 1.5vmin rgba(0, 0, 0, 0.5);
           box-shadow: 0.2vmin 0.3vmin 1.5vmin rgba(0, 0, 0, 0.5);
   border-radius: 1%;
